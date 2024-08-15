@@ -64,8 +64,17 @@ function handleImageError() {
                     </nav>
                 </header>
 
-                <!-- <main class="mt-6">
-                    <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
+                <main class="mt-6">
+                    <!-- <body class="bg-gradient-to-br from-blue-100 to-indigo-200 min-h-screen flex items-center justify-center"> -->
+    <div class="text-center">
+        <h1 class="text-5xl font-bold text-indigo-800 mb-6">Bienvenue!!</h1>
+        <p class="text-xl text-gray-700 mb-8">Nous sommes ravis de vous accueillir sur mon premier site OAuth!</p>
+        <!-- <div class="bg-indigo-600 text-white py-3 px-6 text-lg hover:bg-indigo-700 ">
+            Commencer
+        </div> -->
+    </div>
+
+                    <!-- <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
                         <a
                             href="https://laravel.com/docs"
                             id="docs-card"
@@ -164,8 +173,8 @@ function handleImageError() {
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </main> -->
+                    </div> -->
+                </main>
 
 
             </div>
