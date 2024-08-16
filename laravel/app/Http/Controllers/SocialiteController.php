@@ -42,7 +42,8 @@ class SocialiteController extends Controller
             $data = Socialite::driver($request->provider)->user();
             // dd($data);
             # Social login - register
-            $email = $data->getEmail(); // L'adresse email
+            $email = $data->getEmail();
+             // L'adresse email
             if ($this->providers=="github") {
                 # code...
                 $name = $data->getNickname(); // le nom
@@ -55,14 +56,15 @@ class SocialiteController extends Controller
             $user = User::where("email", $email)->first();
 
             # 2. Si l'utilisateur existe
-            if (isset($user)) {
+            // if (isset($user)) {
 
-                // Mise à jour des informations de l'utilisateur
-                $user->name = $name;
-                $user->save();
+            //     // Mise à jour des informations de l'utilisateur
+            //     $user->name = $name;
+            //     $user->save();
 
             // # 3. Si l'utilisateur n'existe pas, on l'enregistre
-            } else {
+            // }
+            if(!isset($user)) {
 
                 // Enregistrement de l'utilisateur
                 $user = User::create([
